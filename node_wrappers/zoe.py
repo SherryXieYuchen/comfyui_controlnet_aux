@@ -3,7 +3,7 @@ import comfy.model_management as model_management
 from controlnet_aux.zoe import ZoeDetector
 
 class Zoe_Depth_Map_Preprocessor:
-    def __init__:
+    def __init__(self) -> None:
         self.model = ZoeDetector.from_pretrained().to(model_management.get_torch_device())
 
     @classmethod
